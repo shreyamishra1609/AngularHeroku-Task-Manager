@@ -1,0 +1,53 @@
+.todo {
+    background-color: #cc0000  !important;
+    border-radius: 15px;
+    color:white;
+    text-align:center
+ 
+}
+
+
+.completed {
+    background-color: rgb(8, 104, 8)  !important;
+    border-radius: 15px;
+    color:white;
+    text-align:center
+}
+
+.progress{
+   
+    background-color: #FEBE10 !important;
+    border-radius: 15px;
+    color:black;
+    text-align:center
+    
+}
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+
+
+
+
+  .top-profile{
+      padding-bottom:5%
+  }
+
+  .padding-bottom{
+      padding-bottom: 1% !important;
+  }

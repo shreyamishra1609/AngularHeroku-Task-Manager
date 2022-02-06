@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: linear-gradient(#2a2a72,#0a79b9);
+    background-attachment: fixed;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: small !important;
+    align-items: center;
+    color:white
+   
+}
+
+
+.p-card{
+    background: #cac8c8 !important;
+    color:#073e6be3 !important
+    
+}
+
+.rounded-card{
+border-radius:30px;
+background-color:#1d1e2bd3;
+padding:10px;
+margin-left:10%;
+width:80%;
+min-height: 85vh;
+text-align:left;
+position: absolute;
+}
+
+
+.rounded-card2{
+border-radius:15px;
+background-color:rgb(202, 200, 200);
+// height:30vh;
+color:#073e6be3
+ 
+}
+
+.p-progressbar {
+     margin-top: 2% !important;
+}
+
+.progress-yellow{
+    .p-progressbar .p-progressbar-value {
+        border: 0 none;
+        margin: 0;
+        background: #FEBE10 !important;
+    }
+}
+
+.progress-red{
+    .p-progressbar .p-progressbar-value {
+        border: 0 none;
+        margin: 0;
+        background: #fe1010 !important;
+    }
+}
+
+.progress-green{
+    .p-progressbar .p-progressbar-value {
+        border: 0 none;
+        margin: 0;
+        background: #1ba50f !important;
+    }
+}
+.rounded-card3{
+    border-radius:10px;
+    background-color:rgb(202, 200, 200);
+    // height:6vh;
+    color:#073e6be3;
+    margin-bottom:1% ;
+    width:90% !important;
+    margin-left:4.5% !important
+     
+}
+
+.p-button {
+    background-color: #073e6be3 !important;
+    color: white !important;
+}
+
+.p-badge {
+    background-color: #073e6be3 !important;
+    color: white !important;
+}
+
+    
+
+
+    

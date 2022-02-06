@@ -1,0 +1,58 @@
+
+
+
+<p-dialog  [(visible)]="display || editDisplay"  position="top" [modal]="true" [closable]="false" [style]="{width: '35%' }">
+
+<form  [formGroup]="addForm">
+<p-card header="{{header}}"[style]="{width: '100%' }" styleClass="p-card-shadow">
+    <div class="p-fluid p-grid">
+        <div class="p-field p-col-12 p-md-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText formControlName="title" >
+                <label for="inputtext">Task Title</label>
+            </span>
+
+            <span class="error" style="font-size: 12px; color:rgb(196, 17, 17)" *ngIf="addForm.controls['title'].hasError('required') && addForm.controls['title'].touched"
+            > **Please enter tilte </span>
+        </div>
+
+        <br>
+
+        <div class="p-field p-col-12 p-md-4">
+            <span class="p-float-label">
+                <p-dropdown [options]="status" formControlName="type" ></p-dropdown>
+
+            </span>
+        </div>
+        <br>
+        <div class="p-field p-col-12 p-md-4">
+
+
+            <p-calendar id="date" placeholder="Select date" appendTo="body"  formControlName="dueDate"></p-calendar>
+            <span class="error" style="font-size: 12px; color:rgb(196, 17, 17)" *ngIf="addForm.controls['dueDate'].hasError('required') && addForm.controls['dueDate'].touched"
+            > **Please select a date </span>
+        </div>
+        <br>
+        <div class="p-field p-col-12 p-md-4">
+            <span class="p-float-label">
+     
+                
+        <textarea rows="5" cols="30" pInputTextarea  formControlName="description" placeholder="Description"></textarea>
+            </span> 
+        </div>
+    </div>
+
+
+
+
+    <ng-template pTemplate="footer">
+        <p-button label="Save" icon="pi pi-check" [disabled]="!addForm.valid"  (onClick)="saveTask()"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}" (onClick)="closeFormFunc()">
+        </p-button>
+    </ng-template>
+</p-card>
+
+</form>
+
+</p-dialog>
+
