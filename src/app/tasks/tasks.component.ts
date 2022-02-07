@@ -26,6 +26,7 @@ export class TasksComponent implements OnInit {
   taskToday!: number;
   trimmedMon!: string;
   message: any;
+  noTaskMsg="Go ahead and add a task . Click on New Task !"
 
   constructor(private taskService: TasksService, private messageService: MessageService, private cdRef: ChangeDetectorRef) { }
 
@@ -150,6 +151,7 @@ export class TasksComponent implements OnInit {
 
   public taskFortodayFunc(){
     this.tasks=this.tasks.filter(element=>element.dueDate===this.currentDate).sort()
+    this.noTaskMsg="You have no tasks for today"
   }
 
   public dateTransform(){
