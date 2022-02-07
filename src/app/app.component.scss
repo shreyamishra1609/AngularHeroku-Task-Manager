@@ -19,3 +19,13 @@ h1{
     margin-right: 5px;
 }
 
+@media (max-width: 575px){
+    #head{
+        font-family:Bahnschrift;
+        padding:1%;
+        color:white;
+        text-align: center;
+        font-size: 25px
+    } 
+}
+
